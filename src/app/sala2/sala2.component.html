@@ -1,0 +1,18 @@
+<div class="card my-5">
+    <div class="card-body mt-5">
+        <div class="row bg-dark">
+            <button class="btn" alt=" " style="background-color: orangered;" (click)="irInicio()">
+          <i class="fa fa-home"></i>
+          </button>
+            <div class="texto col-sm-10 col-md-10">
+                <p class="text-capitalize h4 text-center bg-dark text-white ">ingeniería de alimentos</p>
+            </div>
+        </div>
+
+        <ng-image-slider [images]="imageObject" (imageClick)="mostarInfo($event)" [imagePopup]="false" [imageSize]="{width: 500, height: 500, space: 10}" #nav></ng-image-slider>
+        <p class="card-subtitle bg-dark text-white text-center"> Profesora encargada: Cristina Álvarez
+            <br> correo: correo: cristina.alvarez@ucaldas.edu.co
+
+    </div>
+
+</div>

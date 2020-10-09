@@ -1,0 +1,20 @@
+<div class="card my-5">
+    <div class="card-body mt-5">
+        <div class="row bg-dark">
+            <button class="btn btn-sm my-4 px-3" style="background-color: orangered;" alt=" " (click)="irInicio()">
+      <i class="fa fa-home"></i>
+      </button>
+            <div class="texto col-sm-10 col-md-10">
+                <p class="text-capitalize h4 text-center bg-dark text-white ">tecnología en logística
+                    <br>Tecnología en procesos de seguridad y salud en el trabajo
+                    <br>Tecnología en agroindustria</p>
+            </div>
+        </div>
+
+        <ng-image-slider [images]="imageObject" (imageClick)="mostarInfo($event)" [imagePopup]="false" [imageSize]="{width: 500, height: 500, space: 10}" #nav></ng-image-slider>
+        <p class="card-subtitle bg-dark text-white text-center"> Profesor encargado: César Vargas
+            <br> correo: cesar.vargas@ucaldas.edu.co
+        </p>
+    </div>
+
+</div>
